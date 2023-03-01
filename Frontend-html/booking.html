@@ -13,6 +13,11 @@
 
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+
+    <!-- MetroUI -->
+    <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css">
+    <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script>
+
 </head>
 
 
@@ -86,12 +91,16 @@
                         <label class="form-label" for="form6Example6">Số điện thoại</label>
                     </div>
 
+                    <!-- Ngày đặt sân -->
+                    <label class="form-label" for="ngay_dat_san">Ngày đặt sân</label>
+                    <input type="text" data-role="calendarpicker" id="ngay_dat_san" name="ngay_dat_san">
+
                     <!-- Time input -->
                     <div class="form-outline mb-4">
 
                         <p>Thời gian đặt sân </p>
 
-                        <div class="d-flex align-items-start bg-light mb-3" style="height: 40px;">
+                        <div class="d-flex align-items-start mb-3" style="height: 40px;">
                             <div class="col">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="time_1" />
@@ -121,7 +130,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex align-items-start bg-light mb-3" style="height: 40px;">
+                        <div class="d-flex align-items-start mb-3" style="height: 40px;">
                             <div class="col">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="time_5" />
