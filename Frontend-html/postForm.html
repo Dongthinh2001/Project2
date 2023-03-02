@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <title> Đăng bài tìm đối</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+</head>
+
+
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Navbar brand -->
+            <a class="navbar-brand me-2" href="https://mdbgo.com/">
+                <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="16" alt="MDB Logo"
+                    loading="lazy" style="margin-top: -1px;" />
+            </a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giới thiệu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="postList.html">Đăng bài tìm đối</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-link px-3 me-2">
+                        Đăng nhập
+                    </button>
+                    <button type="button" class="btn btn-primary me-3">
+                        Đăng ký
+                    </button>
+                    <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Background image -->
+
+    <!-- Background image -->
+</header>
+
+<body>
+    <div class="container-fluid" style="width: 60%; padding: 30px;padding-top: 80px;">
+        <form>
+            <!-- Name input -->
+            <div class="form-outline mb-4">
+                <input type="text" id="form4Example1" class="form-control" />
+                <label class="form-label" for="form4Example1">Tên</label>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input type="email" id="form4Example2" class="form-control" />
+                <label class="form-label" for="form4Example2">Số điện thoại</label>
+            </div>
+
+            <label class="form-label" for="ngay_dat_san" style="margin-left: 10px; margin-right: 10px;">Ngày đặt
+                sân</label>
+
+            <input type="date" data-role="calendarpicker" id="ngay_dat_san" name="ngay_dat_san">
+
+            <div class="float-end">
+                <label class="form-label select-label " style="margin-left: 10px; margin-right: 10px;">Chọn thời
+                    gian
+                    đá</label>
+                <select class="select">
+                    <option value="1">8h-9h30</option>
+                    <option value="2">9h30-11h</option>
+                    <option value="3">1h-2h30</option>
+                    <option value="4">2h30-4h</option>
+                    <option value="5">4h-5h30</option>
+                    <option value="6">5h30-7h</option>
+                    <option value="7">7h-8h30</option>
+                    <option value="9">8h30-10h</option>
+                </select>
+            </div>
+            <div class="form-outline mb-4">
+                <textarea class="form-control" id="form-ma-san"></textarea>
+                <label class="form-label" for="form-ma-san">Mã sân</label>
+            </div>
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                <label class="form-label" for="form4Example3">Nội dung</label>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Gửi</button>
+        </form>
+    </div>
+</body>
+<footer class="text-center text-white " style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Github -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-dark" href="#">dongthinh2001</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+
+</html>
