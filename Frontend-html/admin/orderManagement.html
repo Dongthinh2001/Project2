@@ -38,7 +38,7 @@
                 <!-- Left links -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Quản lý tài khoản</a>
+                        <a class="nav-link" href="accountManagement.html">Quản lý tài khoản</a>
                     </li>
 
                     <li class="nav-item">
@@ -67,6 +67,61 @@
 </header>
 
 <body>
+    <div class="d-flex align-items-start bg-light mb-3" style="height: 100px;">
+        <div class="col" style="padding: 5px; padding-left: 100px;">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tháng </h5>
+                    <select class="select">
+                        <option value="1">Tháng 1</option>
+                        <option value="2">Tháng 2</option>
+                        <option value="3">Tháng 3</option>
+                        <option value="4">Tháng 4</option>
+                        <option value="5">Tháng 5</option>
+                        <option value="6">Tháng 6</option>
+                        <option value="7">Tháng 7</option>
+                        <option value="9">Tháng 9</option>
+                        <option value="10">Tháng 10</option>
+                        <option value="11">Tháng 11</option>
+                        <option value="12">Tháng 12</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col" style="padding: 5px;">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Trung bình đơn đặt/ngày</h5>
+                    <p class="card-text">20</p>
+                </div>
+            </div>
+        </div>
+        <div class="col" style="padding: 5px;">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tổng đơn đặt</h5>
+                    <p class="card-text">700</p>
+                </div>
+            </div>
+        </div>
+        <div class="col" style="padding: 5px;">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tổng thu từ dịch vụ thêm</h5>
+                    <p class="card-text">50.000.000đ</p>
+                </div>
+            </div>
+        </div>
+        <div class="col" style="padding: 5px; padding-right: 100px;">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tổng thu</h5>
+                    <p class="card-text">100.000.000đ</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container" style="padding: 60px; margin: auto;width: 90%;"">
         <table class=" table align-middle mb-0 bg-white">
         <thead class=" bg-light">
@@ -128,10 +183,19 @@
                                             <p class="card-text">Mua nước: 7 chai ...</p>
                                             <p class="card-text">Thuê áo tập: 7</p>
                                             <img src="https://mpos.vn/public/media?fpath=MjAyMTA2MDQtQURNSU4tbXBvczoxMDAwLTAtYnVvYzQy.png"
-                                                class="img-thumbnail" style="max-height: 400px" />
-                                            <button type="button"
-                                                class="btn btn-outline-success btn-rounded float-end">Xác nhận
-                                                đặt</button>
+                                                class="img-thumbnail"
+                                                style="max-height: 400px; margin: auto; display: block;" />
+                                            <div
+                                                style="display: inline-block; margin: auto ; transform: translate(20%, 0) ">
+
+                                                <button type="button" class="btn btn-outline-success btn-rounded"
+                                                    style="margin: 10px;">Xác nhận
+                                                    đặt</button>
+                                                <button type="button" class="btn btn-outline-danger btn-rounded "
+                                                    style="margin: 10px;">Từ chối
+                                                    đặt</button>
+                                            </div>
+
                                         </div>
 
                                     </div>
