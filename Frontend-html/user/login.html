@@ -49,66 +49,15 @@
                     </li>
                 </ul>
                 <!-- Left links -->
-                <!-- Notifications -->
-                <div class="dropdown">
-                    <a
-                      class="text-reset me-3 dropdown-toggle hidden-arrow"
-                      href="#"
-                      id="navbarDropdownMenuLink"
-                      role="button"
-                      data-mdb-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <i class="fas fa-bell"></i>
-                      <span class="badge rounded-pill badge-notification bg-danger">1</span>
-                    </a>
-                    <ul
-                      class="dropdown-menu dropdown-menu-end"
-                      aria-labelledby="navbarDropdownMenuLink"
-                    >
-                      <li>
-                        <a class="dropdown-item" href="#">Yêu cầu đặt lịch của tôi</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Yêu cầu ghép đối</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Tin của tôi</a>
-                      </li>
-                    </ul>
-                  </div>
-                <div class="dropdown">
-                    <a
-                      class="dropdown-toggle d-flex align-items-center hidden-arrow"
-                      href="#"
-                      id="navbarDropdownMenuAvatar"
-                      role="button"
-                      data-mdb-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <img
-                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                        class="rounded-circle"
-                        height="25"
-                        alt="Black and White Portrait of a Man"
-                        loading="lazy"
-                      />
-                    </a>
-                    <ul
-                      class="dropdown-menu dropdown-menu-end"
-                      aria-labelledby="navbarDropdownMenuAvatar"
-                    >
-                      <li>
-                        <a class="dropdown-item" href="#">My profile</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Settings</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Logout</a>
-                      </li>
-                    </ul>
-                  </div>
+
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-link px-3 me-2">
+                        Đăng nhập
+                    </button>
+                    <button type="button" class="btn btn-primary me-3">
+                        Đăng ký
+                    </button>
+                </div>
             </div>
             <!-- Collapsible wrapper -->
         </div>
@@ -122,31 +71,31 @@
 </header>
 
 <body>
-    <div class="container" style="padding: 30px; margin-left:0; width: 100%;">
-        <nav class="bg-body-tertiary" style="width: auto;">
-            <div class="container" style="padding: 50px; margin-left: 0; ">
-                <a class="navbar-brand" href="#">
+    <div class="container" style="max-width: 600px;; padding: 30px;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="margin: auto;">
                     <dl class="row">
-                        <p class="fs-1">Thông tin cá nhân của Thịnh Xuân Đông</p>
-                        <dt class="col-sm-3">Ảnh</dt>
-                        <dd class="col-sm-9"><img src="./assets/avatar.jpg" class="img-thumbnail" width="20%"></dd>
+                        <p class="fs-3" style="margin: auto;text-align: center;">Đăng nhập</p>
 
-                        <dt class="col-sm-3">Tên tài khoản</dt>
-                        <dd class="col-sm-9">dongthinh2001</dd>
-                        <dt class="col-sm-3">Tên đầy đủ</dt>
-                        <dd class="col-sm-9">Thịnh Xuân Đông</dd>
-                        <dt class="col-sm-3">Số điện thoại</dt>
-                        <dd class="col-sm-9">0986968***</dd>
-                        <dt class="col-sm-3">Ngày đăng ký</dt>
-                        <dd class="col-sm-9">24/02/2023</dd>
-                        <dt class="col-sm-3"><br></dt>
-                        <dd class="col-sm-9"></dd>
-                        <dt class="col-sm-3"><button style="height:35px;width:110px" type="button"
-                                class="btn btn-primary me-3">
-                                Chỉnh sửa <button style="height:35px;width:161px" type="button" class="btn btn-primary me-3">
-                                    Đổi mật khẩu
+                        <div class="input-group mb-3" >                           
+                            <input type="text" class="form-control" placeholder="Tên tài khoản" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                        
+                          <div class="input-group mb-3" >                           
+                            <input type="text" class="form-control" placeholder="Mật khẩu" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="form-check" >
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault" style="margin: auto;">
+                                <font size="3">Nhớ tài khoản</font><br/>
+                            </label>
+                          </div>
+
+                            <dt class="col-sm-3" style="margin: auto; text-align: center;"><button type="button" class="btn btn-primary me-3">
+                                Đăng nhập<!--  <button type="button" class="btn btn-secondary">Cancel</button> -->
                                 </button></dt>
-                        </button></dt>
+                        
 
                     </dl>
                     </dd>

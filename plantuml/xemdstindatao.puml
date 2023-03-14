@@ -1,0 +1,21 @@
+@startuml
+actor       Customer    as 1
+boundary    ListPostView    as 2
+control     System     as 3
+entity      PostClass     as 4
+
+
+1->2 : Xem danh sach tin da tao
+activate 1
+2->3 : Gui yeu cau xem
+activate 2
+3->4 : searchpost_customer()
+activate 3
+4 -->3: return
+3-->2 : Hien thi danh sach tin da tao
+deactivate 3
+2-->1 : return
+deactivate 2
+deactivate 1
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+actor       Admin   as 1
+boundary    ListCustomerView    as 2
+control     System     as 3
+entity      CustomerClass     as 4
+database Database as 5
+
+1->2 : Them, sua hoac xoa
+activate 1
+2->3 : Gui yeu cau
+activate 2
+3->4 : searchcustomer()
+activate 3
+4->5 : Luu tru, sua, hoac xoa du lieu
+activate 4
+5-->4 :return
+4 -->3: return
+deactivate 4
+3-->2 : return 
+deactivate 3
+2-->1 : return
+deactivate 2
+deactivate 1
+
+@enduml

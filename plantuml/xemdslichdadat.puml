@@ -1,0 +1,23 @@
+@startuml
+actor       Customer    as 1
+boundary    ListPitchView    as 2
+control     System     as 3
+entity      OrderClass     as 4
+entity      FootballPitchClass     as 5
+
+1->2 : Xem danh sach san bong da dat
+activate 1
+2->3 : Gui yeu cau xem
+activate 2
+3->4 : searchorder_customer()
+activate 3
+4-->3 : return
+3->5 : searchpitch_order()
+5-->3 : return
+3-->2 : Hien thi danh sach san da dat
+deactivate 3
+2-->1 : return
+deactivate 2
+deactivate 1
+
+@enduml

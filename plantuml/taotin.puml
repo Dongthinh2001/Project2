@@ -1,0 +1,22 @@
+@startuml
+actor       Customer    as 1
+boundary    PostView    as 2
+control     System     as 3
+entity      PostClass     as 4
+database    Database as 5
+1->2 : Dien thong tin 
+activate 1
+2->3 : Gui yeu cau dang tin 
+activate 2
+3->4 : Gui thong tin
+activate 3
+4->5 : Luu tru 
+activate 4
+5-->4 : return
+deactivate 4
+4-->3 : return
+deactivate 3
+3-->2 : return
+deactivate 2
+2-->1 : return
+deactivate 1

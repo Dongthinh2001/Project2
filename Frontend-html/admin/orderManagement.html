@@ -22,7 +22,7 @@
         <div class="container">
             <!-- Navbar brand -->
             <a class="navbar-brand me-2" href="https://mdbgo.com/">
-                <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="16" alt="MDB Logo"
+                <img src="/Frontend-html/assets/logo.png" height="35" alt="MDB Logo"
                     loading="lazy" style="margin-top: -1px;" />
             </a>
 
@@ -38,25 +38,86 @@
                 <!-- Left links -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="accountManagement.html">Quản lý tài khoản</a>
+                        <a class="nav-link" href="#">Trang chủ</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Phê duyệt đặt lịch</a>
+                        <a class="nav-link" href="postList.html">Tìm đối tác</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="postList.html">Đặt lịch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="postList.html">Quản lý khách hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="postList.html">Quản lý sân bóng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="postList.html">Yêu cầu đặt lịch</a>
                     </li>
                 </ul>
                 <!-- Left links -->
-
-                <div class="d-flex align-items-center">
-                    <button type="button" class="btn btn-link px-3 me-2">
-                        Cài đặt
-                    </button>
-                    <button type="button" class="btn btn-primary me-3">
-                        Đăng xuất
-                    </button>
-                    <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i
-                            class="fab fa-github"></i></a>
-                </div>
+                <!-- Notifications -->
+                <div class="dropdown">
+                    <a
+                      class="text-reset me-3 dropdown-toggle hidden-arrow"
+                      href="#"
+                      id="navbarDropdownMenuLink"
+                      role="button"
+                      data-mdb-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-bell"></i>
+                      <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                    </a>
+                    <ul
+                      class="dropdown-menu dropdown-menu-end"
+                      aria-labelledby="navbarDropdownMenuLink"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">Yêu cầu đặt lịch của tôi</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Yêu cầu ghép đối</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Tin của tôi</a>
+                      </li>
+                    </ul>
+                  </div>
+                <div class="dropdown">
+                    <a
+                      class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                      href="#"
+                      id="navbarDropdownMenuAvatar"
+                      role="button"
+                      data-mdb-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        class="rounded-circle"
+                        height="25"
+                        alt="Black and White Portrait of a Man"
+                        loading="lazy"
+                      />
+                    </a>
+                    <ul
+                      class="dropdown-menu dropdown-menu-end"
+                      aria-labelledby="navbarDropdownMenuAvatar"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">My profile</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Settings</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </li>
+                    </ul>
+                  </div>
             </div>
             <!-- Collapsible wrapper -->
         </div>
@@ -64,6 +125,9 @@
     </nav>
     <!-- Navbar -->
 
+    <!-- Background image -->
+
+    <!-- Background image -->
 </header>
 
 <body>
@@ -101,7 +165,7 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Tổng đơn đặt</h5>
-                    <p class="card-text">700</p>
+                    <p class="card-text">680</p>
                 </div>
             </div>
         </div>
@@ -109,7 +173,7 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Tổng thu từ dịch vụ thêm</h5>
-                    <p class="card-text">50.000.000đ</p>
+                    <p class="card-text">24.000.000đ</p>
                 </div>
             </div>
         </div>
@@ -117,7 +181,7 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Tổng thu</h5>
-                    <p class="card-text">100.000.000đ</p>
+                    <p class="card-text">89.000.000đ</p>
                 </div>
             </div>
         </div>
@@ -140,13 +204,13 @@
                         <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt=""
                             style="width: 45px; height: 45px" class="rounded-circle" />
                         <div class="ms-3">
-                            <p class="fw-bold mb-1">Khách A</p>
-                            <p class="text-muted mb-0">0123456789</p>
+                            <p class="fw-bold mb-1">username 1</p>
+                            <p class="text-muted mb-0">0822825966</p>
                         </div>
                     </div>
                 </td>
                 <td>
-                    <p class="fw-normal mb-1">Sân ABCXY</p>
+                    <p class="fw-normal mb-1">Sân số 1</p>
                     <p class="fw-normal mb-1">11/03/2023</p>
                     <p class="text-muted mb-0">9h30-11h</p>
                 </td>
@@ -168,7 +232,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <!-- Model title -->
-                                    <h5 class="modal-title" id="exampleModalLabel">Chi tiết đơn ABC</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">Chi tiết đơn</h5>
                                     <button type="button" class="btn-close" data-mdb-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
@@ -176,11 +240,11 @@
                                     <!-- Modal body -->
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="card-title">Khách A - 0123456789</h5>
-                                            <p class="card-text">Đặt sân B</p>
+                                            <h5 class="card-title">username 1 - 0822825966</h5>
+                                            <p class="card-text">Đặt sân số 1</p>
                                             <p class="card-text">Ngày: 11/03/2023</p>
                                             <p class="card-text">Thời gian: 9h30-11h</p>
-                                            <p class="card-text">Mua nước: 7 chai ...</p>
+                                            <p class="card-text">Mua nước: 7 chai</p>
                                             <p class="card-text">Thuê áo tập: 7</p>
                                             <img src="https://mpos.vn/public/media?fpath=MjAyMTA2MDQtQURNSU4tbXBvczoxMDAwLTAtYnVvYzQy.png"
                                                 class="img-thumbnail"
@@ -214,15 +278,15 @@
                 <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
                     class="rounded-circle" />
                 <div class="ms-3">
-                    <p class="fw-bold mb-1">Khách A</p>
-                    <p class="text-muted mb-0">0123456789</p>
+                    <p class="fw-bold mb-1">username 2</p>
+                    <p class="text-muted mb-0">0966987896</p>
                 </div>
             </div>
         </td>
         <td>
-            <p class="fw-normal mb-1">Sân ABCXY</p>
-            <p class="fw-normal mb-1">11/03/2023</p>
-            <p class="text-muted mb-0">9h30-11h</p>
+            <p class="fw-normal mb-1">Sân số 2</p>
+            <p class="fw-normal mb-1">13/03/2023</p>
+            <p class="text-muted mb-0">19h-20h30</p>
         </td>
         <td>
             <span class="badge badge-success rounded-pill d-inline">Đã chuyển tiền</span>
@@ -271,132 +335,7 @@
             </div>
         </td>
     </tr>
-    <tr>
-        <td>
-            <div class="d-flex align-items-center">
-                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
-                    class="rounded-circle" />
-                <div class="ms-3">
-                    <p class="fw-bold mb-1">Khách A</p>
-                    <p class="text-muted mb-0">0123456789</p>
-                </div>
-            </div>
-        </td>
-        <td>
-            <p class="fw-normal mb-1">Sân ABCXY</p>
-            <p class="fw-normal mb-1">11/03/2023</p>
-            <p class="text-muted mb-0">9h30-11h</p>
-        </td>
-        <td>
-            <span class="badge badge-success rounded-pill d-inline">Đã chuyển tiền</span>
-        </td>
-        <td>Có</td>
-        <td>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
-                Xem chi tiết
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <!-- Model title -->
-                            <h5 class="modal-title" id="exampleModalLabel">Chi tiết đơn ABC</h5>
-                            <button type="button" class="btn-close" data-mdb-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <!-- Modal body -->
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Khách A - 0123456789</h5>
-                                    <p class="card-text">Đặt sân B</p>
-                                    <p class="card-text">Ngày: 11/03/2023</p>
-                                    <p class="card-text">Thời gian: 9h30-11h</p>
-                                    <p class="card-text">Mua nước: 7 chai ...</p>
-                                    <p class="card-text">Thuê áo tập: 7</p>
-                                    <img src="https://mpos.vn/public/media?fpath=MjAyMTA2MDQtQURNSU4tbXBvczoxMDAwLTAtYnVvYzQy.png"
-                                        class="img-thumbnail" style="max-height: 400px" />
-                                    <button type="button" class="btn btn-outline-success btn-rounded float-end">Xác nhận
-                                        đặt</button>
-                                </div>
-
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Đóng</button>
-                        <button type="button" class="btn btn-primary">Lưu thay đổi</button>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div class="d-flex align-items-center">
-                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
-                    class="rounded-circle" />
-                <div class="ms-3">
-                    <p class="fw-bold mb-1">Khách A</p>
-                    <p class="text-muted mb-0">0123456789</p>
-                </div>
-            </div>
-        </td>
-        <td>
-            <p class="fw-normal mb-1">Sân ABCXY</p>
-            <p class="fw-normal mb-1">11/03/2023</p>
-            <p class="text-muted mb-0">9h30-11h</p>
-        </td>
-        <td>
-            <span class="badge badge-success rounded-pill d-inline">Đã chuyển tiền</span>
-        </td>
-        <td>Có</td>
-        <td>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
-                Xem chi tiết
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <!-- Model title -->
-                            <h5 class="modal-title" id="exampleModalLabel">Chi tiết đơn ABC</h5>
-                            <button type="button" class="btn-close" data-mdb-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <!-- Modal body -->
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Khách A - 0123456789</h5>
-                                    <p class="card-text">Đặt sân B</p>
-                                    <p class="card-text">Ngày: 11/03/2023</p>
-                                    <p class="card-text">Thời gian: 9h30-11h</p>
-                                    <p class="card-text">Mua nước: 7 chai ...</p>
-                                    <p class="card-text">Thuê áo tập: 7</p>
-                                    <img src="https://mpos.vn/public/media?fpath=MjAyMTA2MDQtQURNSU4tbXBvczoxMDAwLTAtYnVvYzQy.png"
-                                        class="img-thumbnail" style="max-height: 400px" />
-                                    <button type="button" class="btn btn-outline-success btn-rounded float-end">Xác nhận
-                                        đặt</button>
-                                </div>
-
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Đóng</button>
-                        <button type="button" class="btn btn-primary">Lưu thay đổi</button>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </td>
-    </tr>
+    
     </tbody>
     </table>
     </div>
@@ -405,15 +344,28 @@
 <footer class="text-center text-white " style="background-color: #f1f1f1;">
     <!-- Grid container -->
     <div class="container pt-4">
+        <figure class="float-start">
+            <blockquote class="blockquote">
+                <a class="text-dark">Sân bóng đá nhân tạo Hà Nội</a>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Địa chỉ : Hà Nội - Việt Nam
+            </figcaption>
+          </figure>
         <!-- Section: Social media -->
         <section class="mb-4">
             <!-- Facebook -->
             <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
                 data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
 
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
             <!-- Github -->
             <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+                data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-youtube"></i></a>  
         </section>
         <!-- Section: Social media -->
     </div>
@@ -421,8 +373,8 @@
 
     <!-- Copyright -->
     <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
-        <a class="text-dark" href="#">TX Đông</a>
+        © 2023 Copyright:
+        <a class="text-dark" href="#">dongthinh2001</a>
     </div>
     <!-- Copyright -->
 </footer>

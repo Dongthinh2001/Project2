@@ -1,0 +1,38 @@
+' @startuml
+' actor       Customer    
+' boundary    Boundary    as Foo2
+' control     Control     as Foo3
+' entity      Entity      as Foo4
+' database    Database    as Foo5
+' collections Collections as Foo6
+' queue       Queue       as Foo7
+' Foo -> Foo1 : To actor 
+' Foo -> Foo2 : To boundary
+' Foo -> Foo3 : To control
+' Foo -> Foo4 : To entity
+' Foo -> Foo5 : To database
+' Foo -> Foo6 : To collections
+' Foo -> Foo7: To queue
+' @enduml
+@startuml
+actor       Customer    as f0
+boundary    RegisterView    as f1
+control     System     as f2
+entity      AccountClass     as f3
+database    Database    as f4 
+f0 -> f1 : Dien thong tin
+activate f0
+f1 -> f2 : Gui yeu cau dang ky
+activate f1
+f2 -> f3 : Gui tai khoan, mat khau
+activate f2
+f3 -> f3 : checkusername()
+f3 --> f2 : return 
+f2 -> f4 : Luu tai khoan
+f4 --> f2 : return
+f2 --> f1 : return
+deactivate f2
+f1 --> f0 : Thong bao dang ky thanh cong
+deactivate f1
+deactivate f0
+@enduml

@@ -1,0 +1,27 @@
+@startuml
+actor       Admin   as 1
+boundary    ListOrderView    as 2
+control     System     as 3
+entity      OrderClass     as 4
+entity      PaymentClass     as 5
+database OrderClass as 6
+
+1->2 : Lua chon don dat lich
+activate 1
+2->3 : Gui yeu cau
+activate 2
+3->4 : searchorder()
+activate 3
+4-->3 : return 
+3->5 : searchpayment_order()
+5-->3 : return 
+3->6 : Thay doi trang thai
+
+6-->3 :return
+3-->2 : return 
+deactivate 3
+2-->1 : return
+deactivate 2
+deactivate 1
+
+@enduml
