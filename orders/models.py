@@ -14,5 +14,6 @@ class Order (models.Model):
     id_order = models.AutoField(primary_key=True)
     user_name = models.ForeignKey(Account, on_delete=models.DO_NOTHING)
     id_pitch = models.ForeignKey(FootballPitch, on_delete=models.DO_NOTHING)
-    ordered = models.DateTimeField(default=datetime.now)
+    created_date = models.DateTimeField(default=datetime.now)
+    ordered_date = models.DateTimeField(default=datetime.now)
     status = models.CharField(max_length=64,choices=OrderStatus.choices,default=OrderStatus.WAITING)

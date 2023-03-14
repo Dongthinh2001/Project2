@@ -23,7 +23,6 @@ class FootballPitch (models.Model):
     id_pitch = models.AutoField(primary_key=True)
     name_pitch = models.CharField(max_length=50)
     size = models.CharField(max_length=10,choices=SIZE_CHOICES,default='5')
-    date_order = models.DateField(default=None)
     time_slot = models.CharField(max_length=20,choices=TimeSlot.choices,default=None)
     price = models.DecimalField(max_length=100)
     status = models.CharField(max_length=50,choices=PitchStatus.choices,default=PitchStatus.EMPTY)
