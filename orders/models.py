@@ -1,9 +1,10 @@
+# from abc import _FuncT
 from django.db import models
 
 from accounts.models import Account
 from footballpitchs.models import FootballPitch
 from datetime import datetime
-
+from django.utils.translation import gettext_lazy as _
 # Create your models here.
 
 
@@ -16,4 +17,5 @@ class Order (models.Model):
     id_pitch = models.ForeignKey(FootballPitch, on_delete=models.DO_NOTHING)
     created_date = models.DateTimeField(default=datetime.now)
     ordered_date = models.DateTimeField(default=datetime.now)
-    status = models.CharField(max_length=64,choices=OrderStatus.choices,default=OrderStatus.WAITING)
+    status = models.CharField(
+        max_length=64, choices=OrderStatus.choices, default=OrderStatus.WAITING)
