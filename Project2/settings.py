@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'equipments.apps.EquipmentsConfig',
     'orderdetails.apps.OrderdetailsConfig',
     'footballpitchs.apps.FootballpitchsConfig',
+    'posts.apps.PostsConfig',
     'home.apps.HomeConfig',
     'django.contrib.admin',
     'django.contrib.auth',
